@@ -153,9 +153,20 @@ body { background: var(--smoky-black); }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.sidebar,
+
 article {
   background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.sidebar {
+  background-image: url(../images/paddy.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
@@ -323,6 +334,8 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
 }
+
+
 
 .info-content .name {
   color: var(--white-2);
@@ -1547,6 +1560,11 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 1024px) {
+
+  .info-content
+{
+  margin-top: 100px;
+}
 
   /**
    * CUSTOM PROPERTY
